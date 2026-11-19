@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Multifuncional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="input" class="calculator-container">
+            <h1>Calculadora</h1>
+            <div class="input-group">
+                <label for="num1">Primeiro Número (ou Radicando):</label>
+                <input type="number" id="num1" placeholder="Digite o primeiro número">
+            </div>
+
+            <div class="input-group">
+                <label for="num2">Segundo Número (ou Índice da Raiz):</label>
+                <input type="number" id="num2" placeholder="Digite o segundo número">
+            </div>
+
+            <div class="input-group">
+                <label for="operation">Operação:</label>
+                <select id="operation">
+                    <option value="vazio">Selecione uma operação</option>
+                    <option value="soma">Soma (+)</option>
+                    <option value="subtracao">Subtração (-)</option>
+                    <option value="multiplicacao">Multiplicação (×)</option>
+                    <option value="divisao">Divisão (÷)</option>
+                    <option value="potencia">Potência (xʸ)</option>
+                    <option value="raiz">Raiz (ʸ√x)</option>
+                </select>
+            </div>
+
+            <button id="calculate-btn">Calcular</button>
+
+            <div class="result-box">
+                <h2>Resultado: <span id="result-value">-</span></h2>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
